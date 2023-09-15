@@ -1,3 +1,5 @@
+import Navbar from "./UI/Navbar";
+
 export default function Home() {
   return (
     <main className="homepage">
@@ -8,6 +10,7 @@ export default function Home() {
           developer from israel.
         </h3>
         <p>thank you for visit my page, check out my cool projects</p>
+        <Navbar />
       </section>
     </main>
   );

@@ -1,5 +1,5 @@
-import AppCard from "../UI/AppCard";
-import { getApps } from "../util/utils";
+import AppCard from "../../UI/AppCard";
+import { getApps } from "../../util/utils";
 
 export default async function page({ params }) {
   const apps = await getApps(params.slug);
