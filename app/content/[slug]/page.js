@@ -5,8 +5,8 @@ export default async function page({ params }) {
   const apps = await getApps(params.slug);
 
   return (
-    <div>
-      {params.slug} projects
+    <div className="mt-10">
+      <h3 className="mb-4">{params.slug} projects</h3>
       {apps?.map((app) => (
         <AppCard
           name={app.name}
