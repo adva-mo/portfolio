@@ -17,7 +17,8 @@ module.exports = {
         grey: "rgb(96,100,101)",
       },
       backgroundColor: {
-        sand: "rgba(245,201,167,0.2)",
+        sand: "rgba(245,201,167,0.5)",
+        orange: "rgb(205,101,70,0.5)",
       },
     },
   },
