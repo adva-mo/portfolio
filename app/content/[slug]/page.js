@@ -19,6 +19,7 @@ export default async function page({ params }) {
             demo={app.demo}
             tech={app.tech}
             img={app.img}
+            key={app.name}
           />
         ))}
       </div>
