@@ -10,27 +10,15 @@ export default function AppCard({
   img,
 }) {
   return (
-    <div className="flex w-full mb-6">
-      <div className="basis-3/4 flex flex-col">
-        <h5 className="text-lg"> {name}</h5>
+    <div className="w-2/5 m-0 h-[500px] flex flex-col">
+      <Image src={img} height={300} width={500}></Image>
+      <div className="text-left grow">
+        <p className="text-4xl text-black bold"> {name}</p>
         <p className="italic"> {info}</p>
-        <Image src={img} height={500} width={800}></Image>
       </div>
-      <div class="basis-1/4">
-        <fieldset className="border border-neutral-500 h-full flex flex-col px-2">
-          <legend className="px-1">
-            <Image src={"/jupiter.png"} width={50} height={50}></Image>
-            {/* <div>i</div> */}
-          </legend>
-          <p className="grow">coding Languages: {codingLanguages}</p>
-          <hr />
-          <p className="grow">technologies: {tech}</p>
-          <hr />
-          <div className="grow-none flex gap-3 justify-center">
-            <a href={githubLink}>githubLink</a>
-            <a href={demo}>demo</a>
-          </div>
-        </fieldset>
+      <div className="flex gap-3 justify-center">
+        <a href={githubLink}>githubLink</a>
+        <a href={demo}>demo</a>
       </div>
     </div>
   );

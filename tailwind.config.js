@@ -16,6 +16,9 @@ module.exports = {
         black: "rgb(39, 34, 38)",
         grey: "rgb(96,100,101)",
       },
+      backgroundColor: {
+        sand: "rgba(245,201,167,0.2)",
+      },
     },
   },
   plugins: [],
