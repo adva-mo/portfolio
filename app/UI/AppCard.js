@@ -17,8 +17,11 @@ export default function AppCard({
         <Image src={img} height={500} width={800}></Image>
       </div>
       <div class="basis-1/4">
-        <fieldset className="border border-black h-full flex flex-col">
-          <legend>i</legend>
+        <fieldset className="border border-neutral-500 h-full flex flex-col px-2">
+          <legend className="px-1">
+            <Image src={"/jupiter.png"} width={50} height={50}></Image>
+            {/* <div>i</div> */}
+          </legend>
           <p className="grow">coding Languages: {codingLanguages}</p>
           <hr />
           <p className="grow">technologies: {tech}</p>
