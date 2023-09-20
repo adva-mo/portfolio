@@ -6,6 +6,7 @@ export default function Navbar() {
       <Link href="/content/backend">Backend </Link>
       <Link href="/content/e2e">e2e </Link>
       <Link href="/content/about">about </Link>
+      <Link href="/content/contact">contact me</Link>
     </div>
   );
 }
