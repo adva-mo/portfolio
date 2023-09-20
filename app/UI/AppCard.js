@@ -1,29 +1,27 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { getTechIcon } from "../util/iconsLink";
 
-export default function AppCard({
-  name,
-  codingLanguages,
-  info,
-  githubLink,
-  demo,
-  tech,
-  img,
-}) {
+export default function AppCard({ name, info, githubLink, demo, tech, img }) {
   const [showSkills, setshowSkills] = useState(false);
 
   return (
-    <div className="w-[550px] m-0 h-[600px] flex flex-col rounded  gap-2">
-      <div>
+    <div className="w-[35rem] m-0 h-[45rem] flex flex-col rounded  gap-2">
+      <div className="relative h-[30rem] w-[35rem] rounded">
         {showSkills ? (
-          <p className=" h-[300px]">
-            {codingLanguages}
-            <br />
-            {tech[0] || ""}
-          </p>
+          <div className="flex justify-center items-center align-center gap-3 h-[300px]">
+            {tech.map((tech) => {
+              const iconLink = getTechIcon(tech);
+              return iconLink ? (
+                <Image src={iconLink} alt={tech} width={70} height={70} />
+              ) : (
+                <span>{tech}</span>
+              );
+            })}
+          </div>
         ) : (
-          <Image src={img} height={300} width={550}></Image>
+          <Image src={img} fill={true} className="rounded"></Image>
         )}
       </div>
       <div className="flex items-center">
