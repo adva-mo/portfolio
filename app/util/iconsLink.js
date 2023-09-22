@@ -23,7 +23,7 @@ const data = {
   elasticSearch: "https://www.svgrepo.com/show/373575/elastic.svg",
   twilio: "https://www.svgrepo.com/show/354468/twilio.svg",
   cassandra: "https://www.svgrepo.com/show/353540/cassandra.svg",
-  express: "https://icons8.com/icon/kg46nzoJrmTR/express-js",
+  express: "",
   pygame: "https://cdn.worldvectorlogo.com/logos/pygame-1.svg",
 };
 
