@@ -6,6 +6,7 @@ const nextConfig = {
       "images.theconversation.com",
       "cdn-icons-png.flaticon.com",
       "icons8.com",
+      "thenounproject.com",
     ],
   },
 };
