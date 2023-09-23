@@ -25,6 +25,7 @@ const data = {
   cassandra: "https://www.svgrepo.com/show/353540/cassandra.svg",
   express: "",
   pygame: "https://cdn.worldvectorlogo.com/logos/pygame-1.svg",
+  aws: "https://www.svgrepo.com/show/448266/aws.svg",
 };
 
 export const getTechIcon = (tech) => data[tech];
