@@ -7,6 +7,7 @@ const nextConfig = {
       "cdn-icons-png.flaticon.com",
       "icons8.com",
       "thenounproject.com",
+      "raw.githubusercontent.com",
     ],
   },
 };

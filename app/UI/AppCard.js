@@ -6,11 +6,20 @@ import { getTechIcon } from "../util/iconsLink";
 export default function AppCard({ name, info, githubLink, demo, tech, img }) {
   const [showSkills, setshowSkills] = useState(false);
 
+  const mountedStyle = { animation: "inAnimation 400ms ease-in" };
+  const unmountedStyle = {
+    animation: "outAnimation 400ms ease-out",
+    animationFillMode: "forwards",
+  };
+
   return (
     <div className="w-[35rem] m-0 h-[45rem] flex flex-col rounded  gap-2">
       <div className="relative h-[30rem] w-[35rem] rounded">
         {showSkills ? (
-          <div className="flex justify-center items-center align-center gap-3 h-[100%] flex-wrap ">
+          <div
+            className="flex justify-center items-center align-center gap-3 h-[100%] flex-wrap transition-opacity duration-500 ease-in-out"
+            style={showSkills ? mountedStyle : unmountedStyle}
+          >
             {tech.map((tech) => {
               const iconLink = getTechIcon(tech);
               return iconLink ? (
@@ -20,6 +29,8 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
                   width={100}
                   height={100}
                   className="m-4"
+                  key={tech}
+                  priority={true}
                 />
               ) : (
                 <span>{tech}</span>
@@ -27,7 +38,13 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
             })}
           </div>
         ) : (
-          <Image src={img} fill={true} className="rounded"></Image>
+          <Image
+            src={img}
+            alt="Not available"
+            fill={true}
+            className="rounded transition-opacity duration-1000ms ease-in-out"
+            style={showSkills ? unmountedStyle : mountedStyle}
+          ></Image>
         )}
       </div>
       <div className="flex items-center">
@@ -46,19 +63,20 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
           className="bg-sand w-[250px] py-3 rounded drop-shadow-md"
           href={githubLink}
         >
-          {/* <Image
-            src="https://thenounproject.com/api/private/icons/821469/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
-            width={20}
-            height={20}
-          ></Image> */}
           View source code
         </a>
-        <a
+        <div
           className="bg-orange w-[250px] py-3 rounded drop-shadow-md"
-          href={demo}
+          style={demo ? {} : { cursor: "not-allowed" }}
         >
-          View app
-        </a>
+          <a
+            className=" w-[250px] py-3 rounded drop-shadow-md"
+            href={demo}
+            style={demo ? {} : { pointerEvents: "none" }}
+          >
+            {demo ? "View app" : "Demo is not available"}
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -26,6 +26,9 @@ const data = {
   express: "",
   pygame: "https://cdn.worldvectorlogo.com/logos/pygame-1.svg",
   aws: "https://www.svgrepo.com/show/448266/aws.svg",
+  prisma:
+    "https://raw.githubusercontent.com/prisma/presskit/main/Assets/Prisma-DarkLogo.png",
+  next: "/icons/nextjs.png",
 };
 
 export const getTechIcon = (tech) => data[tech];
