@@ -1,7 +1,19 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Delius_Unicase, Orbitron, Open_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+export const delius = Delius_Unicase({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+export const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+export const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Adva Mozes",
@@ -17,7 +29,7 @@ export default function RootLayout({ children }) {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={openSans.className}>{children}</body>
     </html>
   );
 }

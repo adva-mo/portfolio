@@ -14,7 +14,9 @@ module.exports = {
       },
       colors: {
         black: "rgb(39, 34, 38)",
-        grey: "rgb(96,100,101)",
+        grey: "rgb(80, 84, 85)",
+        red: "rgb(145,43,49)",
+        dred: "rgb(125,37,42)",
       },
       backgroundColor: {
         sand: "rgba(245,201,167,0.5)",

@@ -25,7 +25,13 @@ export default function page() {
   return (
     <div className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg mt-10">
       <div className="flex flex-col justify-between relative w-[40vw]">
-        <Image src="/contact-img.png" fill={true} className="rounded"></Image>
+        <Image
+          src="/contact-img.png"
+          fill={true}
+          sizes="40vw"
+          className="rounded"
+          priority={true}
+        ></Image>
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <div>
