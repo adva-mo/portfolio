@@ -9,6 +9,7 @@ export default function ContentLayout({ children }) {
         <span className={orbitron.className}>ADVA MOZES</span>
       </Link>
       <Navbar />
+      <hr class="border-1 border-gray-600/50 w-[98vw] shadow-xl" />
       {children}
     </section>
   );

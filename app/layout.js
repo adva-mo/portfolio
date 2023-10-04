@@ -7,12 +7,12 @@ export const delius = Delius_Unicase({
 });
 export const orbitron = Orbitron({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400"],
 });
 
 export const openSans = Open_Sans({
   subsets: ["latin"],
-  display: "swap",
+  weight: ["400", "700"],
 });
 
 export const metadata = {
