@@ -23,12 +23,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-        />
-      </head>
+      <script
+        src="https://kit.fontawesome.com/4fa5486b68.js"
+        crossorigin="anonymous"
+      ></script>
       <body className={openSans.className}>{children}</body>
     </html>
   );

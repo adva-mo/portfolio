@@ -13,7 +13,9 @@ export default function Home() {
         </h3>
         <div className="flex gap-4 flex-col justify-center items-center text-center -translate-x-1/4">
           <span className="font-bold">Check out my work</span>
-          <span className="animate-bounce font-bold">V</span>
+          <span className="animate-bounce font-bold">
+            <i className="fa-solid fa-down-long fa-xl"></i>
+          </span>
           <Navbar />
         </div>
       </section>
