@@ -50,6 +50,7 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
           className="text-xs mr-8 bg-orange rounded-lg p-1.5 text-white self-end mb-[0.3rem] ml-2"
           onMouseEnter={() => setshowSkills(true)}
           onMouseOut={() => setshowSkills(false)}
+          target="blank"
         >
           View tech stack
         </a>
@@ -59,6 +60,7 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
         <a
           className="bg-sand w-[250px] py-3 rounded drop-shadow-md"
           href={githubLink}
+          target="blank"
         >
           View source code
         </a>
@@ -70,6 +72,7 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
             className=" w-[250px] py-3 rounded drop-shadow-md"
             href={demo}
             style={demo ? {} : { pointerEvents: "none" }}
+            target="blank"
           >
             {demo ? "View app" : "Demo is not available"}
           </a>
