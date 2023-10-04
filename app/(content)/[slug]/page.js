@@ -1,14 +1,14 @@
 import AppCard from "../../UI/AppCard";
-import { getApps } from "../../util/utils";
+import { getProjectsInfo } from "../../util/utils";
 import { delius } from "@/app/layout";
 export default async function page({ params }) {
-  const apps = await getApps(params.slug);
+  const apps = await getProjectsInfo(params.slug);
 
   return (
     <div className="mt-10 w-full text-grey">
       <div className={delius.className}>
         <h3 className="mb-16 text-6xl uppercase text-black">
-          {params.slug} projects
+          {params.slug} applications
         </h3>
       </div>
       <div className="flex-wrap flex justify-evenly gap-14">

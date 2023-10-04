@@ -12,8 +12,8 @@ export default function Home() {
           developer from israel.
         </h3>
         <div className="flex gap-4 flex-col justify-center items-center text-center -translate-x-1/4">
-          <span>Check out my work</span>
-          <span className="animate-bounce">V</span>
+          <span className="font-bold">Check out my work</span>
+          <span className="animate-bounce font-bold">V</span>
           <Navbar />
         </div>
       </section>

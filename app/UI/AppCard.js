@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { getTechIcon } from "../util/iconsLink";
 
 export default function AppCard({ name, info, githubLink, demo, tech, img }) {
   const [showSkills, setshowSkills] = useState(false);
@@ -21,10 +20,9 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
             style={showSkills ? mountedStyle : unmountedStyle}
           >
             {tech.map((tech) => {
-              const iconLink = getTechIcon(tech);
-              return iconLink ? (
+              return (
                 <Image
-                  src={iconLink}
+                  src={`/icons/${tech}.svg`}
                   alt={tech}
                   width={100}
                   height={100}
@@ -32,8 +30,6 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
                   key={tech}
                   priority={true}
                 />
-              ) : (
-                <span>{tech}</span>
               );
             })}
           </div>
@@ -44,6 +40,7 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
             fill={true}
             className="rounded transition-opacity duration-1000ms ease-in-out"
             style={showSkills ? unmountedStyle : mountedStyle}
+            layout="fixed"
           ></Image>
         )}
       </div>
