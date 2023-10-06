@@ -8,7 +8,7 @@ export default function Home() {
           ADVA MOZES
         </h2>
         <h3 className={delius.className} style={{ fontSize: "2.5rem" }}>
-          Hello! I'm Adva, a backend <br />
+          Hello! I am Adva, a backend <br />
           developer from israel.
         </h3>
         <div className="flex gap-4 flex-col justify-center items-center text-center -translate-x-1/4">

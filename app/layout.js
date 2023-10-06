@@ -23,10 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <script
-        src="https://kit.fontawesome.com/4fa5486b68.js"
-        crossorigin="anonymous"
-      ></script>
+      <head></head>
       <body className={openSans.className}>{children}</body>
     </html>
   );
