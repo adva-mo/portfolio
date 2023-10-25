@@ -16,14 +16,15 @@ export default function Page() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
       //todo: provide better feedback
-      alert(result.text);
-    } catch (e) {
-      alert(error.text);
+      form.current.reset();
+      alert("thanks, I will reach out soon!");
+    } catch (error) {
+      alert(error.message);
     }
   };
 
   return (
-    <div className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg mt-10">
+    <div className="w-[80vw] px-8 flex py-16 gap-8 bg-gray-100 text-gray-900 rounded-lg shadow-lg mt-10">
       <div className="flex flex-col justify-between relative w-[40vw]">
         <Image
           src="/contact-img.png"
@@ -31,9 +32,10 @@ export default function Page() {
           sizes="40vw"
           className="rounded"
           priority={true}
+          alt="contact-hero"
         ></Image>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} className="grow">
         <div>
           <span className="uppercase text-sm text-gray-600 font-bold">
             Full Name

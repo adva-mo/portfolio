@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Navbar from "./UI/Navbar";
 import { delius, orbitron } from "./layout";
+
 export default function Home() {
   return (
     <main className="homepage">
@@ -12,9 +14,17 @@ export default function Home() {
           developer from israel.
         </h3>
         <div className="flex gap-4 flex-col justify-center items-center text-center -translate-x-1/4">
-          <span className="font-bold">Check out my work</span>
-          <span className="animate-bounce font-bold">
-            <i className="fa-solid fa-down-long fa-xl"></i>
+          <span className={`font-bold ${orbitron.className}`}>
+            Check out my work
+          </span>
+          <span className="animate-bounce">
+            <Image
+              src={`/arrow-down.png`}
+              alt={"arrow"}
+              width={20}
+              height={20}
+              priority={true}
+            />
           </span>
           <Navbar />
         </div>
