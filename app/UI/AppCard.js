@@ -62,7 +62,6 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
           href={githubLink}
           target="blank"
         >
-          {/* <i className="fa-solid fa-code fa-xs"></i> &#32; &#32; View source */}
           View source code
         </a>
         <div
@@ -75,14 +74,7 @@ export default function AppCard({ name, info, githubLink, demo, tech, img }) {
             style={demo ? {} : { pointerEvents: "none" }}
             target="blank"
           >
-            {demo ? (
-              <>
-                Try the app
-                {/* <i class="fa-solid fa-globe fa-xs"></i> &#32; &#32; Try the app */}
-              </>
-            ) : (
-              "Demo is not available"
-            )}
+            {demo ? <>Try the app</> : "Demo is not available"}
           </a>
         </div>
       </div>
