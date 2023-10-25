@@ -1,0 +1,86 @@
+{
+  "e2e": [
+    {
+      "name": "Waves.io",
+      "tech": ["py", "flask", "postgres", "bs4"],
+      "info": "An automated waves detecter for surfers, which crawls weather and waves data from the internet. Based on user favorite beaches and preferences, the system sends the user an SMS when a good day for a surf is detected.",
+      "githubLink": "https://github.com/adva-mo/waves.io",
+      "demo": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2Flogo.png?alt=media&token=99160c05-22ec-4c04-bad4-7d87523e684c&_gl=1*38qq2t*_ga*ODc1MTU5ODIyLjE2OTY0MDM0NTM.*_ga_CW55HF8NVT*MTY5NjQxNjgzOC4zLjEuMTY5NjQxNjg5NS4zLjAuMA.."
+    },
+    {
+      "name": "Pas",
+      "tech": ["nextjs", "mongodb", "js", "prisma"],
+      "info": "A custom employee management system, was developed for a 'pas' company to efficiently handle employee productions and effectively manage project expenses.",
+      "githubLink": "https://github.com/adva-mo/pas",
+      "demo": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2FScreen%20Shot%202023-10-04%20at%2010.10.19%20AM.png?alt=media&token=58430adb-d73e-4e3c-baf6-5cf9abdc7a31&_gl=1*1ehhvni*_ga*ODc1MTU5ODIyLjE2OTY0MDM0NTM.*_ga_CW55HF8NVT*MTY5NjQwMzQ1My4xLjEuMTY5NjQwMzUwOS40LjAuMA.."
+    },
+    {
+      "name": "Sharry",
+      "tech": ["react", "firebase", "js"],
+      "info": "A social media for food lovers. Go ahead and save all your favourites recipes from the internet in one place. you can also dowanload 'Sharry' from google-play. ",
+      "githubLink": "https://github.com/adva-mo/Sharry",
+      "demo": "https://jade-bonbon-1ec1c5.netlify.app/",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2FScreen%20Shot%202023-09-16%20at%201.27.35%20PM.png?alt=media&token=a69f5d52-23ce-422d-b8a8-6db95788d089"
+    },
+    {
+      "name": "How to 'Qode'",
+      "tech": ["express", "nodejs", "aws", "socket", "js", "react"],
+      "info": "A community for new developers to share their coding issues, get answers from other users and from experts, help others with their questions, get ranked, and participate in an online discussion board. Check the experts who can answer anything!",
+      "githubLink": "https://github.com/adva-mo/howToQode",
+      "demo": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2FScreen%20Shot%202023-09-24%20at%2010.35.03%20AM.png?alt=media&token=67bd1039-8808-4396-b64f-0c7a03d0580c"
+    },
+    {
+      "name": "Space Ships battle",
+      "tech": ["py"],
+      "info": "A cool game for two players, i've built in order to keep my son busy while im coding. Try to shoot the other spaceship while avoiding it's bullets. ",
+      "githubLink": "https://github.com/adva-mo/spaceships-battle-game",
+      "demo": "https://replit.com/@advamozes/spaceships-battle?v=1",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2FScreen%20Shot%202023-09-16%20at%204.26.22%20PM.png?alt=media&token=2ee1d814-f1a9-4254-a79e-4ec80c477a89"
+    },
+    {
+      "name": "Minecraft 2D",
+      "tech": ["html", "css", "js"],
+      "info": "The first web game i built based on the famous game. You can mine materials and build your dream world. Generate new world whenever you are done with your work.",
+      "githubLink": "https://github.com/adva-mo/Minecraft2D",
+      "demo": "https://iridescent-monstera-3c859d.netlify.app/",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2FScreen%20Shot%202023-09-24%20at%2010.27.33%20AM.png?alt=media&token=f53db5c9-ce8e-4cd7-a214-583130608099"
+    }
+  ],
+  "backend": [
+    {
+      "name": "Search engine",
+      "tech": ["java", "spring", "elasticSearch", "kafka", "redis", "swagger"],
+      "info": "A powerful search engine which crawls over a link provided by the user, search with Depth-first search algorithm through all the related links in the website, and keep searching through links of the links. The app saves all the text data in elastic search DB",
+      "githubLink": "https://github.com/adva-mo/searchEngine",
+      "demo": "https://searchengine.advamozes.repl.co/swagger-ui.html#/",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2Fa-computer-with-a-lot-of-data-in-small-font--a-big-guy-sitting-next-to-it-with-a-magnifying-glass--searching-through-the-data-on-the-computer%20(1).png?alt=media&token=3298ace9-5676-45ab-a901-fcb73eb4faf3"
+    },
+    {
+      "name": "TinyUrl BigData",
+      "tech": ["cassandra", "redis", "spring", "swagger", "java"],
+      "info": "'Tinyurl' allows you to insert a website url, and provide you with a short link, which will redirect you to the original website. Also it keeps track how many clicks-on the link has. 'Tinyurl' designed for big scale because of the use in cassandra DB.",
+      "githubLink": "https://github.com/adva-mo/tinyUrl",
+      "demo": "https://tinyurl--advamozes.repl.co/swagger-ui.html#",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2Fa-white-figure-like-the-Pillsbury-doll-is-holding-a-text-box-which-says%20-%20Tiny-.png?alt=media&token=998d5e2b-ae16-43db-a44f-7f522009ba7b"
+    },
+    {
+      "name": "ISS tracker",
+      "tech": ["py", "twilio"],
+      "info": "For the space fans out there, a cool program which will send me a text message whenever its night time and the international space station is around my coordinates geo-location, so i can look up and spot it right away. (*script-no demo)",
+      "githubLink": "",
+      "demo": "",
+      "img": "https://images.theconversation.com/files/122814/original/image-20160517-9491-1t98btv.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
+    },
+    {
+      "name": "sentiment analysis",
+      "tech": ["java", "kafka"],
+      "info": "Reactive software for analyzing public opinions using NLP (Natural Language Processing). The app helps users make informed investment decisions by tracking sentiment around stocks and financial companies.",
+      "githubLink": "https://github.com/adva-mo/sentiment-analysis",
+      "demo": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharry-1319e.appspot.com/o/screenshots%2Fartificial-intelligence-2167835_640.jpg?alt=media&token=84b6ac0e-f42c-443e-86b0-9bd45834bb98&_gl=1*1fi7q9y*_ga*ODc1MTU5ODIyLjE2OTY0MDM0NTM.*_ga_CW55HF8NVT*MTY5ODIzNDg4NC40LjEuMTY5ODIzNDk0Mi4yLjAuMA.."
+    }
+  ]
+}
